@@ -11,7 +11,6 @@
 
                 <li class=" progress flex relative w-1/3 h-screen">
                     <h1 class=" flex items-center justify-center absolute h-screen w-full">
-                        <!-- <a href="/work" class="text-3xl">My work</a> -->
                         <NuxtLink class="text-3xl" to="work">My work</NuxtLink>
                     </h1>
                 </li>
