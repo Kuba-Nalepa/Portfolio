@@ -1,0 +1,98 @@
+<template>
+    <div>
+        <div class=" w-full h-full ">
+            <ul class="flex flex-row h-full text-center">
+
+                <li class=" about flex relative  w-1/3 h-screen">
+                    <h1 class=" flex items-center justify-center absolute h-screen w-full">
+                        <NuxtLink class="text-3xl" to="about">About me</NuxtLink>
+                    </h1>
+                    left
+                </li>
+
+                <li class=" progress flex relative w-1/3 h-screen">
+                    <h1 class=" flex items-center justify-center absolute h-screen w-full">
+                        <!-- <a href="/work" class="text-3xl">My work</a> -->
+                        <NuxtLink class="text-3xl" to="work">My work</NuxtLink>
+                    </h1>
+                    center
+                </li>
+
+                <li class=" hobby flex relative w-1/3 h-screen">
+                    <h1 class="  flex items-center justify-center absolute h-screen w-full">
+                        <NuxtLink class="text-3xl" to="hobby">My Hobby</NuxtLink>
+
+                    </h1>
+                    right
+                </li>
+            </ul>
+       </div>
+    </div>
+</template>
+
+
+<script>
+
+
+export default {
+    data() {
+        return {
+        }
+    }
+}
+</script>
+
+
+<style scoped>
+.about{
+    background-image: url("@/assets/About1.png");
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    backdrop-filter: blur(5px);
+}
+.progress {
+    background-image: url("@/assets/Coding1.png");
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+}
+.hobby{
+    background-image: url("@/assets/Piano.png");
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+}
+h1{
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    transition: 600ms ease-in-out;
+}
+li{
+    transition: 600ms ease-in-out;
+}
+a{
+    text-shadow: 5px 5px 5px black, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+h1:hover{
+    backdrop-filter: none;
+}
+ li:hover{
+    background-size: auto 110vh;
+    transition: 600ms ease-in-out;
+    width:50%;
+ }
+
+
+
+@media only screen and (max-width:768px)
+{
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li, li:hover{
+        width:100%;
+    }
+}
+</style>
