@@ -75,6 +75,7 @@
     position: relative;
     bottom: 0;
     padding-bottom:10px ;
+    margin-top:50px;
     border-top: solid 1px black;
 }
 

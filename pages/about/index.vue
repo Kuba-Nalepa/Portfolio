@@ -13,7 +13,7 @@
                 My name is Jakub Nalepa, my age is 21. <br> I've graduated
                 <a class=" font-medium hover:text-blue-900" href="https://zs1.bochnia.pl/" target="blank">Zespół szkół nr.1 W Bochni</a>
                 at IT technician profile.<br>
-                Currently I'm working as front-end developer,
+                Currently I'm unemployed I'm working as front-end developer,
                 making new web pages and learning more and more about JavaScript, HTML and CSS . So far I've done
                 a few single-page projects for particular peaople as freelancing.
                 <br>In February this year I started learning JavaScript framework called <i>Vue.js</i>
@@ -32,17 +32,22 @@
                     media.
                 </p>
         </div>
-
+        <CommentInput/>
+        <CommentSection/>
        <Footer/>
     </div>
 
 </template>
 <script>
-import Footer from '@/components/Footer.vue';
+
 import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
+import CommentInput from '@/components/Comments/CommentInput.vue';
+import CommentSection from '@/components/Comments/CommentSection.vue';
+
 
 export default {
-    components: { Footer, Header }
+    components: { Footer, Header, CommentInput, CommentSection }
 }
 </script>
 <style scoped>
@@ -77,7 +82,7 @@ export default {
         }
         p{
             font-size:small;
-            margin:0;
+            margin:5px;
         }
     }
 </style>

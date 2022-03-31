@@ -12,12 +12,10 @@ module.exports = {
             extend: {
                 colors: {
                     'my-color': '#968b747e',
+                    'comment-color':  '#D3D3D3',
                   },
                   backgroundImage:{
                       'piano': "url('@/assets/Piano.png')"
-                  },
-                  height: {
-                      'my-height':'1500px'
                   },
                   
             },
