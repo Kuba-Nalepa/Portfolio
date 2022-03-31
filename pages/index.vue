@@ -7,7 +7,6 @@
                     <h1 class=" flex items-center justify-center absolute h-screen w-full">
                         <NuxtLink class="text-3xl" to="about">About me</NuxtLink>
                     </h1>
-                    left
                 </li>
 
                 <li class=" progress flex relative w-1/3 h-screen">
@@ -15,15 +14,13 @@
                         <!-- <a href="/work" class="text-3xl">My work</a> -->
                         <NuxtLink class="text-3xl" to="work">My work</NuxtLink>
                     </h1>
-                    center
                 </li>
 
                 <li class=" hobby flex relative w-1/3 h-screen">
                     <h1 class="  flex items-center justify-center absolute h-screen w-full">
                         <NuxtLink class="text-3xl" to="hobby">My Hobby</NuxtLink>
-
                     </h1>
-                    right
+
                 </li>
             </ul>
        </div>
