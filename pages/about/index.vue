@@ -1,7 +1,7 @@
 <template>
     <div>
         <Header/>
-        <div class=" main w-4/5 m-4 flex flex-row justify-center mx-auto border border-black mb-14 ">
+        <div class=" main w-4/5 m-4 flex flex-row justify-center mx-auto border border-black mb-14 mt-20 ">
             <img class="w-1/3" src="@/assets/Me.png" alt="">
             <div class=" ">
 
