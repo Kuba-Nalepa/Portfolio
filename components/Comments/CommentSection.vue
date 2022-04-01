@@ -3,12 +3,12 @@
             <div
             v-for="(comment,x) in commentArray"
             :key="x"
-            class=" w-3/4 mx-auto flex flex-col bg-comment-color pl-4 my-2 border border-black  ">
-            <div class="flex flex-col justify-left">
-                <h3 class=" name text-base sm:text-xl flex justify-left font-bold">{{comment.name}}:</h3>
-                <h6 class=" email sm:flex justify-left sm:text-sm text-xs">({{comment.email}}) </h6>
+            class=" comment-section  w-3/4 mx-auto flex flex-col bg-comment-color pl-4 my-2 border border-black  ">
+            <div class=" flex flex-col justify-left">
+                <h3 class="name text-base sm:text-xl flex justify-left font-bold">{{comment.name}}:</h3>
+                <h6 class="email sm:flex justify-left sm:text-sm text-xs">({{comment.email}}) </h6>
             </div>
-                <p class=" comment w-3/4 break-all text-sm sm:text-xl ml-4">{{comment.comment}}</p>
+                <p class="comment w-3/4 break-all text-sm sm:text-xl ml-4">{{comment.comment}}</p>
             </div>
         </div>
 </template>
@@ -43,16 +43,7 @@ export default {
 }
 </script>
 <style scoped>
-@media only screen and(max-width:650px)
-{
-    .name{
-
-    }
-    h6{
-        display:none;
-    }
-    .comment{
-        background-color: brown;
-    }
-}
+ .comment-section{
+     box-shadow: 5px 5px gray;
+ }
 </style>

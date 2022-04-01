@@ -2,7 +2,7 @@
     <div>
         <div class="section my-8">
 
-            <div class=" com_article w-3/4 flex justify-center flex-col p-3 m-auto border border-black ">
+            <div class="com_article w-3/4 flex justify-center flex-col p-3 m-auto border border-black ">
                 <div class="flex justify-left font-bold mb-2">
                     Leave a reply!
                 </div>
@@ -15,7 +15,7 @@
                         required
                         v-model="comment"></textarea>
 
-                <div class=" grid grid-cols-2 gap-x-10 mt-4">
+                <div class="grid grid-cols-2 gap-x-10 mt-4">
                     <div>
                         <label for="name">Your name</label>
                         <input

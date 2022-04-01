@@ -1,11 +1,11 @@
 <template>
     <div>
         <Header/>
-        <div class=" main w-4/5 m-4 flex flex-row justify-center mx-auto border border-black mb-14 mt-20 ">
+        <div class="main w-4/5 m-4 flex flex-row justify-center shadow mx-auto border border-black mb-14 mt-20 ">
             <img class="w-1/3" src="@/assets/Me.png" alt="">
             <div class=" ">
 
-                <h1 class=" text-3xl font-bold text-center pt-6 ">
+                <h1 class="text-3xl font-bold text-center pt-6 ">
                 Hello there!
                 </h1>
 
@@ -13,16 +13,16 @@
                 My name is Jakub Nalepa, my age is 21. <br> I've graduated
                 <a class=" font-medium hover:text-blue-900" href="https://zs1.bochnia.pl/" target="blank">Zespół szkół nr.1 W Bochni</a>
                 at IT technician profile.<br>
-                Currently I'm unemployed I'm working as front-end developer,
-                making new web pages and learning more and more about JavaScript, HTML and CSS . So far I've done
-                a few single-page projects for particular peaople as freelancing.
+                Currently I'm unemployed, hovewer, I keep making new web pages and learning more and more
+                about JavaScript, HTML and CSS . So far I've done a few single-page projects for particular
+                peaople as freelancing.
                 <br>In February this year I started learning JavaScript framework called <i>Vue.js</i>
                 </p>
             </div>
        </div>
 
-        <div class="bottom w-3/5  mx-auto border border-black mb-14 ">
-                <h1 class=" text-3xl font-bold text-center">
+        <div class="bottom shadow w-3/5  mx-auto border border-black mb-14 ">
+                <h1 class="text-3xl font-bold text-center">
                     Willing to work for You!
                 </h1>
                 <p class="m-6 text-xl">
@@ -33,6 +33,7 @@
                 </p>
         </div>
         <CommentInput/>
+        <!-- I haven't got data base for those components :'(  -->
         <CommentSection/>
        <Footer/>
     </div>
@@ -51,9 +52,10 @@ export default {
 }
 </script>
 <style scoped>
-.main{
+.shadow{
     box-shadow: 5px 5px gray;
 }
+
 
     @media only screen and (max-width:975px)
     {

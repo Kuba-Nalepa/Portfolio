@@ -17,7 +17,6 @@ module.exports = {
                   backgroundImage:{
                       'piano': "url('@/assets/Piano.png')"
                   },
-                  
             },
         },
         plugins: [],
