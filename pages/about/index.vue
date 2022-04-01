@@ -27,7 +27,7 @@
                 </h1>
                 <p class="m-6 text-xl">
                     I am keen on creating websites as front-end developer. I'm full of optimism that every day I
-                    spend learning from new sources and being better than yesterday.<br>
+                    spend learning from new sources I'm being better than yesterday.<br>
                     If You are interested to collaborate with me. You can contact me down below by any social
                     media.
                 </p>
