@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="font-serif">
         <Header/>
-        <div class="main w-4/5 m-4 flex flex-row justify-center shadow mx-auto border border-black mb-14 mt-20 ">
+        <div class="main w-4/5 m-4 flex flex-row justify-center shadow mx-auto border border-black mb-14 mt-20">
             <img class="w-1/3" src="@/assets/Me.png" alt="">
             <div class=" ">
 
@@ -22,7 +22,7 @@
        </div>
 
         <div class="bottom shadow w-3/5  mx-auto border border-black mb-14 ">
-                <h1 class="text-3xl font-bold text-center">
+                <h1 class="text-3xl my-4 font-bold text-center">
                     Willing to work for You!
                 </h1>
                 <p class="m-6 text-xl">

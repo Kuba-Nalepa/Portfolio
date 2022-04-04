@@ -3,12 +3,12 @@
             <div
             v-for="(comment,x) in commentArray"
             :key="x"
-            class=" comment-section  w-3/4 mx-auto flex flex-col bg-comment-color pl-4 my-2 border border-black  ">
+            class=" comment-section w-3/5 mx-auto flex flex-col bg-comment-color pl-4 my-2 border border-black  ">
             <div class=" flex flex-col justify-left">
                 <h3 class="name text-base sm:text-xl flex justify-left font-bold">{{comment.name}}:</h3>
                 <h6 class="email sm:flex justify-left sm:text-sm text-xs">({{comment.email}}) </h6>
             </div>
-                <p class="comment w-3/4 break-all text-sm sm:text-xl ml-4">{{comment.comment}}</p>
+                <p class="comment w-3/4 break-all text-sm sm:text-base ml-4">{{comment.comment}}</p>
             </div>
         </div>
 </template>
