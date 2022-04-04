@@ -1,8 +1,8 @@
 <template>
     <div class="w-full h-screen">
         <Header/>
-        <div class="flex justify-end  background w-full h-screen ">
-            <div class="flex flex-col w-1/2 h-full justify-center text-center text-3xl text-white font-serif">
+        <div class="background flex justify-end w-full h-screen ">
+            <div class="text-wrapper flex flex-col w-1/2 h-full justify-center text-center text-3xl text-white font-serif">
                 <button
                 class="p-2"
                 @click="scrollToStart">How it started</button>
@@ -63,7 +63,8 @@ export default {
 <style scoped>
 .background{
     background-image: url("@/assets/Workstation.jpg");
-    background-size: 100vw 100vh;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -71,4 +72,31 @@ export default {
     top:50%;
     left:20%;
 }
+
+@media only screen and (max-width:768px)
+{
+    .text-wrapper{
+        width:100%;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width:400px)
+{
+    .text-wrapper{
+        width:100%;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+}
+
+
 </style>

@@ -1,8 +1,8 @@
 <template>
-    <div class="w-full h-screen">
+    <div class="w-full">
         <Header/>
         <div class="background w-full h-screen">
-            <div class="flex flex-col w-1/2 h-3/5 mx-4 justify-end align-middle text-center text-3xl text-white font-serif">
+            <div class="text-wrapper flex w-1/2 h-full items-center px-8 justify-center text-center text-3xl text-white font-serif">
                 <p>
                     Playing the piano has always interested me since
                     I was little, but I started realising that goal
@@ -31,9 +31,35 @@ export default {
 
 .background{
     background-image: url("@/assets/DarkPiano.jpg");
-    background-size: 100vw 100vh;
+    background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 70% 60%;
     background-repeat: no-repeat;
 }
+
+@media only screen and (max-width:768px)
+{
+    .text-wrapper{
+        width:100%;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width:400px)
+{
+    .text-wrapper{
+        width:100%;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+}
+
 </style>
