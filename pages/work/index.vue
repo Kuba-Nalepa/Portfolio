@@ -2,59 +2,93 @@
     <div class="w-full h-screen">
         <Header/>
         <div class="background flex justify-end w-full h-screen ">
-            <div class="text-wrapper flex flex-col w-1/2 h-full justify-center text-center text-3xl text-white font-serif">
+            <div class="text-wrapper flex flex-col w-1/2 h-full justify-center text-center text-3xl text-white">
                 <button
-                class="p-2"
-                @click="scrollToStart">How it started</button>
-                <button
-                class="p-2"
-                @click="scrollToDevelopment">Development</button>
-                <button
-                class="p-2"
-                @click="scrollToPresent">Present days</button>
+                class="bg-btn-color object-fill w-min-content mx-auto p-4 m-4 rounded-xl hover:bg-white hover:text-black"
+                @click="scrollTo('start')">Development
+                </button>
+
+                 <button
+                class="bg-btn-color w-auto w-min-content whitespace-nowrap mx-auto p-4 m-4 rounded-xl hover:bg-white hover:text-black"
+                @click="scrollTo('projects')">My projects
+                </button>
             </div>
         </div>
-        <div ref="start" class="h-96">
-            Div1
+
+        <div class="start w-full h-3/4 flex justify-end items-center bg-yellow-500 my-10 ">
+            <div v-if="showWebpage" class="w-1/2 h-full flex justify-center flex-col">
+                <img  class="w-3/4 h-3/5 flex mx-auto mt-8" src="@/assets/Webpage1.png" alt="">
+                <div class="flex justify-center flex-row">
+                    <button
+                        @click="left"
+                        class=" bg-black text-white rounded p-1 w-20 m-4 small">
+                            Left
+                        </button>
+
+                        <button
+                        @click="right"
+                        class=" bg-black text-white rounded p-1 w-20 m-4 small">
+                            Right
+                        </button>
+                </div>
+
+            </div>
+
+            <div class="text-center w-1/2  h-auto ">
+                <p  class="text-2xl">
+                    It was so hard for me to get into programming, yet I did not give up. My first webpages
+                    built for schoolwork were simple and almost without any design.
+                </p>
+
+                <button
+                @click="showWebpage = !showWebpage"
+                class=" bg-black text-white rounded p-1 w-24 m-4 small"
+                type="button"
+                value='Button'>
+                Have a look
+                </button>
+
+            </div>
+
+
         </div>
 
-        <div ref="development" class="h-96">
-            Div2
+        <div  class="projects w-full h-96 flex justify-center mx-auto bg-blue-500 my-10 " >
+            <h1 class="text-4xl">My projects:</h1>
         </div>
 
-         <div ref="present" class="h-96">
-            Div3
-        </div>
         <Footer/>
     </div>
 </template>
 
-<script>
+<!-- <h1>My projects:</h1>
+            <div>
+                <Project title="Title1" description="Desciption1"  image="m.png"/>
+            </div> -->
+
+<script setup>
+import Project from '@/components/Project.vue';
 import Footer from '@/components/Footer.vue';
 import Header from '@/components/Header.vue';
 export default {
     components: {
     Footer,
-    Header
+    Header,
+    Project
+    },
+    data(){
+        return{
+            showWebpage: false,
+
+        }
     },
     methods:{
-        scrollToStart(){
-            this.$refs.start.scrollIntoView({
+        scrollTo(x){
+            document.querySelector('.'+x).scrollIntoView({
+            block: 'center',
             behavior: 'smooth'
             })
         },
-
-        scrollToDevelopment(){
-            this.$refs.development.scrollIntoView({
-            behavior: 'smooth'
-            })
-        },
-
-        scrollToPresent(){
-            this.$refs.present.scrollIntoView({
-            behavior: 'smooth'
-            })
-        }
     }
 
 }
@@ -81,7 +115,16 @@ export default {
     p{
         display: flex;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+    .start{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+      .small{
+        font-size: 1rem;
+        white-space: nowrap;
     }
 }
 
@@ -95,6 +138,10 @@ export default {
         display: flex;
         justify-content: center;
         font-size: 0.8rem;
+    }
+    .small{
+        font-size: 0.8rem;
+        
     }
 }
 

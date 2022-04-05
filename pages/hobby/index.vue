@@ -2,7 +2,7 @@
     <div class="w-full">
         <Header/>
         <div class="background w-full h-screen">
-            <div class="text-wrapper flex w-1/2 h-full items-center px-8 justify-center text-center text-3xl text-white font-serif">
+            <div class="text-wrapper flex w-1/2 h-full items-center px-8 justify-center text-center text-3xl text-white">
                 <p>
                     Playing the piano has always interested me since
                     I was little, but I started realising that goal
@@ -28,7 +28,9 @@ export default {
 </script>
 
 <style scoped>
-
+p{
+    text-shadow: 2px 2px 1px black;
+}
 .background{
     background-image: url("@/assets/DarkPiano.jpg");
     background-size: cover;
@@ -45,7 +47,7 @@ export default {
     p{
         display: flex;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -58,7 +60,7 @@ export default {
     p{
         display: flex;
         justify-content: center;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 }
 
