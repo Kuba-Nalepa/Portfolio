@@ -9,15 +9,15 @@
                 </button>
 
                  <button
-                class="bg-btn-color w-auto w-min-content whitespace-nowrap mx-auto p-4 m-4 rounded-xl hover:bg-white hover:text-black"
+                class="bg-btn-color  w-min-content whitespace-nowrap mx-auto p-4 m-4 rounded-xl hover:bg-white hover:text-black"
                 @click="scrollTo('projects')">My projects
                 </button>
             </div>
         </div>
 
         <div class="start w-full h-3/4 flex justify-end items-center bg-yellow-500 my-10 ">
-            <div v-if="showWebpage" class="w-1/2 h-full flex justify-center flex-col">
-                <img  class="w-3/4 h-3/5 flex mx-auto mt-8" src="@/assets/Webpage1.png" alt="">
+            <div v-if="showWebpage" class="w-1/2 h-1/2 flex justify-center flex-col">
+                <img  class="w-3/4 h-full flex mx-auto mt-8" src="@/assets/Webpage1.png" alt="">
                 <div class="flex justify-center flex-row">
                     <button
                         @click="left"
@@ -34,8 +34,8 @@
 
             </div>
 
-            <div class="text-center w-1/2  h-auto ">
-                <p  class="text-2xl">
+            <div class="text-center w-1/2  h-1/2 ">
+                <p  class="text-2xl m-4">
                     It was so hard for me to get into programming, yet I did not give up. My first webpages
                     built for schoolwork were simple and almost without any design.
                 </p>
@@ -115,16 +115,20 @@ export default {
     p{
         display: flex;
         justify-content: center;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .start{
         height: auto;
         display: flex;
         flex-direction: column;
     }
-      .small{
+    .small{
         font-size: 1rem;
         white-space: nowrap;
+    }
+    .start > div{
+        width:100%;
+        height: 50%;
     }
 }
 
@@ -137,11 +141,11 @@ export default {
     p{
         display: flex;
         justify-content: center;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
     .small{
-        font-size: 0.8rem;
-        
+        font-size: 1rem;
+
     }
 }
 
