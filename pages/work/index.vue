@@ -3,10 +3,7 @@
         <Header/>
         <div class="background flex justify-end w-full h-screen ">
             <div class="text-wrapper flex flex-col w-1/2 h-full justify-center text-center text-3xl text-white">
-                <button
-                class="bg-btn-color object-fill w-min-content mx-auto p-4 m-4 rounded-xl hover:bg-white hover:text-black"
-                @click="scrollTo('start')">Development
-                </button>
+
 
                  <button
                 class="bg-btn-color  w-min-content whitespace-nowrap mx-auto p-4 m-4 rounded-xl hover:bg-white hover:text-black"
@@ -15,7 +12,7 @@
             </div>
         </div>
 
-        <div class="start w-full h-3/4 flex justify-end items-center bg-yellow-500 my-10 ">
+        <div class="projects w-full h-3/4 flex justify-end items-center  my-10 ">
             <div v-if="showWebpage" class="w-1/2 h-1/2 flex justify-center flex-col">
                 <img  class="w-3/4 h-full flex mx-auto mt-8" src="@/assets/Webpage1.png" alt="">
                 <div class="flex justify-center flex-row">
@@ -29,15 +26,14 @@
                         @click="right"
                         class=" bg-black text-white rounded p-1 w-20 m-4 small">
                             Right
-                        </button>
+                    </button>
                 </div>
 
             </div>
 
             <div class="text-center w-1/2  h-1/2 ">
                 <p  class="text-2xl m-4">
-                    It was so hard for me to get into programming, yet I did not give up. My first webpages
-                    built for schoolwork were simple and almost without any design.
+                    Here I want to show you my projects, I've done so far:
                 </p>
 
                 <button
@@ -51,10 +47,6 @@
             </div>
 
 
-        </div>
-
-        <div  class="projects w-full h-96 flex justify-center mx-auto bg-blue-500 my-10 " >
-            <h1 class="text-4xl">My projects:</h1>
         </div>
 
         <Footer/>
@@ -117,16 +109,16 @@ export default {
         justify-content: center;
         font-size: 1.5rem;
     }
-    .start{
+    .projects{
         height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .small{
         font-size: 1rem;
         white-space: nowrap;
     }
-    .start > div{
+    .projects > div{
         width:100%;
         height: 50%;
     }

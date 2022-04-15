@@ -5,19 +5,19 @@
 
                 <li class="about flex relative  w-1/3 h-screen">
                     <h1 class="flex items-center justify-center absolute h-screen w-full">
-                        <NuxtLink class="text-3xl" to="about">About me</NuxtLink>
+                        <NuxtLink class="text-3xl bg-btn-color hover:bg-white hover:text-black p-4 m-4 rounded-xl" to="about">About me</NuxtLink>
                     </h1>
                 </li>
 
                 <li class="progress flex relative w-1/3 h-screen">
                     <h1 class="flex items-center justify-center absolute h-screen w-full">
-                        <NuxtLink class="text-3xl" to="work">My work</NuxtLink>
+                        <NuxtLink class="text-3xl bg-btn-color hover:bg-white hover:text-black p-4 m-4 rounded-xl" to="work">My work</NuxtLink>
                     </h1>
                 </li>
 
                 <li class="hobby flex relative w-1/3 h-screen">
                     <h1 class="flex items-center justify-center absolute h-screen w-full">
-                        <NuxtLink class="text-3xl" to="hobby">My Hobby</NuxtLink>
+                        <NuxtLink class="text-3xl bg-btn-color hover:bg-white hover:text-black p-4 m-4 rounded-xl" to="hobby">My Hobby</NuxtLink>
                     </h1>
 
                 </li>
